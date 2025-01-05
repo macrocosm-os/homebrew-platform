@@ -1,0 +1,9 @@
+version: "3"
+
+tasks:
+  default: task --list-all
+
+  env: env | sort
+
+  local:
+    - brew install --formula --build-from-source ./Formula/d/dust.rb
