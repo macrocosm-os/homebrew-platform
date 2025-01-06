@@ -18,6 +18,7 @@ class Dust < Formula
     depends_on "caddy"
     depends_on "d2"
     depends_on "direnv"
+    depends_on "doctl"
     depends_on "duckdb"
     depends_on "eget"
     depends_on "encoredev/tap/encore"
