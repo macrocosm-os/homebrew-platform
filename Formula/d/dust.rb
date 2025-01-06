@@ -5,7 +5,7 @@
 class Dust < Formula
     desc "Run developer tasks and tools via dependencies"
     homepage "https://github.com/macrocosm-os/dust"
-    version "0.1.1"
+    version "0.1.2"
   
     # Only has dependencies
     url "file:///dev/null"
