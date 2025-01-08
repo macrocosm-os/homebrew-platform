@@ -6,22 +6,22 @@ require_relative "../../custom_download_strategy"
 class Dust < Formula
   desc "Run developer tasks and tools"
   homepage "https://github.com/macrocosm-os/dust"
-  version "0.1.4"
+  version "0.1.5"
 
   depends_on "macrocosm-os/platform/dust-tools"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/macrocosm-os/dust/releases/download/v0.1.4/dust_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryDownloadStrategy
-      sha256 "ce9a2bae5dd287153a93bf7e20f5d29cf458523f1cd6a21153914aee6ce53429"
+      url "https://github.com/macrocosm-os/dust/releases/download/v0.1.5/dust_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "e564b6014eb3a04abcde5c902f95953174afabfe75c272aa3c7a02e97ec37cfe"
 
       def install
         bin.install "dust"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/macrocosm-os/dust/releases/download/v0.1.4/dust_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryDownloadStrategy
-      sha256 "90d27f3196d8361e0ebd61071b90a99be45a039916decc44973da19e6e5a7c50"
+      url "https://github.com/macrocosm-os/dust/releases/download/v0.1.5/dust_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "fe5186f1662b72a1caf036fb15af225a1b67c57d30ae7418fe072120d641ad29"
 
       def install
         bin.install "dust"
@@ -32,8 +32,8 @@ class Dust < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/macrocosm-os/dust/releases/download/v0.1.4/dust_Linux_x86_64.tar.gz", using: GitHubPrivateRepositoryDownloadStrategy
-        sha256 "1f9df40896340242d05f15176184f6e7ce6884c0d604b0dc6dc95c2477bddcaa"
+        url "https://github.com/macrocosm-os/dust/releases/download/v0.1.5/dust_Linux_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "f3feed6c87ba91e2244314b383f045a6b07c58ae15ab25c9e3a947325652af1e"
 
         def install
           bin.install "dust"
@@ -42,8 +42,8 @@ class Dust < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/macrocosm-os/dust/releases/download/v0.1.4/dust_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryDownloadStrategy
-        sha256 "d1d947738e1533f3fb7a0178caaa9220b7341d7451dc1a375ac71c80dc453586"
+        url "https://github.com/macrocosm-os/dust/releases/download/v0.1.5/dust_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "87aeb8e0d6f2bc0fc901ec64ea8566115d9f1850045a1c6b2744e52d1b643d60"
 
         def install
           bin.install "dust"
