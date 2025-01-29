@@ -47,7 +47,7 @@ class DustTools < Formula
     depends_on "tailwindcss"
     depends_on "templ"
     depends_on "temporal"
-    depends_on "terraform"
+    depends_on "hashicorp/tap/terraform"
     depends_on "terragrunt"
     depends_on "uv"
     depends_on "hashicorp/tap/vault"
